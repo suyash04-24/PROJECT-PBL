@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      rel="shortcut icon"
+      href="./pages/Dashboard/assets/favicon.svg"
+      type="image/x-icon"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Finance App</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <div class="logo">
+          <p>Finances</p>
+        </div>
+
+        <div class="buttons">
+          <a href="#contact" class="button contact">Contact</a>
+          <a href="./pages/Dashboard/dashboard.html" class="button get-started"
+            >Dashboard</a
+          >
+        </div>
+        
+        <div class="mobile-menu">
+          <div class="open-close">
+            <img
+              src="./images/menu.svg"
+              alt="Abrir"
+              class="open"
+              onclick="Menu.open()"
+            />
+            <img
+              src="./images/close.svg"
+              alt="fechar"
+              class="close"
+              onclick="Menu.close()"
+            />
+
+            <div class="logo-menu">
+              <img src="./images/logo.svg" alt="" />
+              <p>Finance</p>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="menu-open">
+              <div class="menu-items">
+                <ul>
+                  <li><a href="" onclick="Menu.close()">Home</a></li>
+                  <li><a href="" onclick="Menu.close()">Contact</a></li>
+                  <li>
+                    <a
+                      href="./pages/Dashboard/dashboard.html"
+                      onclick="Menu.close()"
+                      >Get Started</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="header-content">
+        <div class="header-content-left">
+          <h1>Your best financial life starts here.</h1>
+          <p>
+            A smart, easy-to-use app that allows you to track your in-and-out
+            money.
+          </p>
+          <a href="./pages/Dashboard/dashboard.html" class="button get-started"
+            >Go to Dashboard</a
+          >
+        </div>
+
+        <div class="header-content-right">
+          <img src="./images/team.svg" alt="Team image" />
+        </div>
+      </div>
+    </header>
+    <!--END OF HEADER-------------------- -->
+    
+    
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://static.tryleap.ai/image-gen-4ca63563-9abd-4863-bb65-2fab3fc4f32e/generated_images/0.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://image.lexica.art/full_webp/2678587d-59c3-4ebe-93d6-86fc8f1c9c2f" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://image.lexica.art/full_webp/6f9e3b4b-cbdf-4bb4-a47d-a08783f733a8" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   
+ 
+
+    <main id="preview">
+      <section class="app-preview container">
+        <div class="app-preview-left">
+          <img src="./images/laptop_preview.svg" alt="App image" />
+        </div>
+
+        <div class="app-preview-right">
+          <h2 class="section-title">Spend smarter and save more</h2>
+          <p class="section-paragraph">
+            Say goodbye to spreadsheets with customizable budgets. Easily add
+            and update your Incomes and expenses.
+          </p>
+          <div class="get-started-line">
+            <a href="./pages/Dashboard/dashboard.html" class="get-started"
+              >Get Started</a
+            >
+            <div class="green-line"></div>
+          </div>
+        </div>
+      </section>
+      <!--END OF app-preview container SECTION-------------------- -->
+
+      <section class="track-your-spending container" id="track">
+        <div class="track-your-spending-left">
+          <h2 class="section-title">Track your spending</h2>
+          <p class="section-paragraph">
+            Reach your goals with custom budgets, monitoring your incomes and
+            expenses everyday, All for free.
+          </p>
+          <div class="get-started-line">
+            <a href="./pages/Dashboard/dashboard.html" class="get-started"
+              >Get Started</a
+            >
+            <div class="green-line"></div>
+          </div>
+        </div>
+
+        <div class="track-your-spending-right">
+          <img src="./images/idea.svg" alt="image" />
+        </div>
+      </section>
+      <!--END OF track-your-spending SECTION-------------------- -->
+
+      <section id="contact" class="get-in-touch container">
+        <div class="get-in-touch-content">
+          <div class="get-in-touch-left">
+            <h2 class="section-title">Get in touch with us.</h2>
+          </div>
+          <div class="get-in-touch-right">
+            <a
+              href=""
+              class="button get-started"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </section>
+      <!--END OF get-in-touch SECTION-------------------- -->
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-card">
+          <h3>Our mission</h3>
+          <a href="">Home</a>
+          <a href="">Preview</a>
+          <a href="#">Track spending</a>
+          <a href="">Contact</a>
+        </div>
+        
+        <div class="footer-card">
+          <h3>Quick Links</h3>
+          <a href="">Home</a>
+          <a href="">Preview</a>
+          <a href="">Track spending</a>
+          <a href="">Contact</a>
+        </div>
+
+        <div class="footer-card">
+          <h3>Get in touch</h3>
+          <div class="social">
+            <a
+              href=""
+              target="_blank"
+              id=""
+              ><i data-feather="linkedin"></i
+            ></a>
+            <a href="" target="_blank"
+              ><i data-feather="" id=""></i
+            ></a>
+            <a
+              href=""
+              target=""
+              id=""
+              ><i data-feather=""></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--END OF FOOTER-------------------- -->
+
+    <!--LOADING SCREEN-->
+    <div class="loader-overlay">
+      <div class="loader"></div>  
+    </div>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scrollReveal.js"></script>
+    <script src="home.js"></script>
+    <script>
+      feather.replace();
+    </script>
+
+ <script>
+    // ==== LOADING SCREEN
+    let spinner = document.querySelector('.loader-overlay');
+
+    window.addEventListener('load', () => {
+      spinner.parentElement.removeChild(spinner);
+   })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
